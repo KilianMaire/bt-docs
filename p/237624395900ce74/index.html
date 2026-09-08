@@ -1,0 +1,232 @@
+<!doctype html><html><head><meta charset=utf8><meta name="robots" content="noindex,nofollow,noarchive,nosnippet"><meta name="referrer" content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>Relevé de référence Enterosys</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #F2F5F8;
+    --paper: #FFFFFF;
+    --paper-alt: #E9EEF4;
+    --navy: #0A0E1C;
+    --ink: #0A0E1C;
+    --ink-soft: #55627A;
+    --ink-faint: #7C8899;
+    --line: #D7DFE9;
+    --line-strong: #A9B7C9;
+    --rule: #6E7C90;
+    --accent: #0B6F82;
+    --accent-bright: #00E3FF;
+    --warn: #9A5A0C;
+    --warn-bg: #F6EDDF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #070A11;
+      --paper: #0F1420;
+      --paper-alt: #151C2A;
+      --navy: #060911;
+      --ink: #E6ECF5;
+      --ink-soft: #96A3B8;
+      --ink-faint: #6C7A90;
+      --line: #1D2635;
+      --line-strong: #2C3849;
+      --rule: #46556A;
+      --accent: #3FD3E8;
+      --warn: #D9A55C;
+      --warn-bg: #241B0E;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #070A11;
+    --paper: #0F1420;
+    --paper-alt: #151C2A;
+    --navy: #060911;
+    --ink: #E6ECF5;
+    --ink-soft: #96A3B8;
+    --ink-faint: #6C7A90;
+    --line: #1D2635;
+    --line-strong: #2C3849;
+    --rule: #46556A;
+    --accent: #3FD3E8;
+    --warn: #D9A55C;
+    --warn-bg: #241B0E;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Source Sans 3", -apple-system, Segoe UI, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .sheet {
+    max-width: 900px; margin: 0 auto; background: var(--paper);
+    border: 1px solid var(--line); padding: 44px 48px 56px;
+    display: flex; flex-direction: column; gap: 34px;
+  }
+  h1, h2, h3 { font-family: Archivo, -apple-system, Segoe UI, sans-serif; margin: 0; text-wrap: balance; letter-spacing: -0.012em; }
+  h1 { font-size: 1.85rem; font-weight: 700; line-height: 1.12; }
+  h2 { font-size: 1.12rem; font-weight: 600; }
+  h3 { font-size: 0.98rem; font-weight: 600; }
+  p { margin: 0; max-width: 70ch; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent);
+  }
+
+  .head { display: flex; flex-direction: column; gap: 10px; border-bottom: 2px solid var(--navy); padding-bottom: 20px; }
+  .head .sub { color: var(--ink-soft); font-size: 0.96rem; }
+  .head-row { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: flex-end; }
+
+  .btn {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; letter-spacing: 0.08em;
+    text-transform: uppercase; padding: 8px 14px; border: 1px solid var(--line-strong);
+    background: var(--paper-alt); color: var(--ink); border-radius: 2px; cursor: pointer;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .how { background: var(--paper-alt); border-left: 3px solid var(--accent); padding: 20px 24px; display: flex; flex-direction: column; gap: 12px; }
+  .how ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 7px; }
+  .how li { font-size: 0.94rem; }
+  .how li strong { font-weight: 600; }
+
+  .warnbox { background: var(--warn-bg); border-left: 3px solid var(--warn); padding: 16px 22px; display: flex; flex-direction: column; gap: 6px; }
+  .warnbox h3 { color: var(--warn); }
+  .warnbox p { font-size: 0.93rem; }
+
+  /* Blocs de manip */
+  .manip { border: 1px solid var(--line-strong); display: flex; flex-direction: column; break-inside: avoid; }
+  .manip > .bar {
+    background: var(--navy); color: #FFFFFF; padding: 10px 20px;
+    font-family: "IBM Plex Mono", monospace; font-size: 0.74rem;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  .manip > .bar .hint { color: #93A3B8; letter-spacing: 0.04em; text-transform: none; font-family: "Source Sans 3", sans-serif; font-size: 0.8rem; }
+  .manip .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  .cell { padding: 14px 20px 16px; border-top: 1px solid var(--line); border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 4px; }
+  .cell:last-child { border-right: none; }
+  .cell .lab { font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-faint); }
+  .cell .desc { font-size: 0.83rem; color: var(--ink-soft); line-height: 1.4; }
+  .fill { border-bottom: 1.5px solid var(--rule); height: 30px; margin-top: 8px; display: flex; align-items: flex-end; justify-content: flex-end; padding-bottom: 3px; }
+  .fill .unit { font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; color: var(--ink-faint); }
+
+  .single { display: flex; flex-direction: column; gap: 16px; border: 1px solid var(--line-strong); padding: 22px 24px; }
+  .single .fill { max-width: 320px; }
+
+  .foot { border-top: 1px solid var(--line); padding-top: 18px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end; }
+  .foot .sig { display: flex; flex-direction: column; gap: 2px; font-size: 0.88rem; color: var(--ink-soft); }
+  .foot .sig strong { font-family: Archivo, sans-serif; color: var(--ink); font-size: 0.95rem; }
+  .stamp { font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; letter-spacing: 0.05em; color: var(--ink-faint); }
+  a { color: var(--accent); }
+
+  @media print {
+    body { background: #FFFFFF; font-size: 11.5pt; }
+    .sheet { border: none; max-width: none; padding: 0; gap: 22px; }
+    .btn, .noprint { display: none !important; }
+    .manip, .single, .how, .warnbox { break-inside: avoid; }
+  }
+</style>
+
+<div class="sheet">
+
+  <div class="head">
+    <span class="eyebrow">Pilote Biotraxion x Enterosys</span>
+    <div class="head-row">
+      <h1>Relevé de référence, avant mise en service</h1>
+      <button class="btn" onclick="window.print()">Imprimer</button>
+    </div>
+    <p class="sub">À remplir avant le 1er octobre 2026, sur trois manips menées exactement comme aujourd'hui. Ces chiffres sont le point de comparaison des indicateurs de temps du pilote. Sans eux, aucun gain ne pourra être démontré en fin de programme.</p>
+  </div>
+
+  <div class="how">
+    <h2>Mode d'emploi, en cinq points</h2>
+    <ol>
+      <li><strong>Ne changez rien.</strong> Ces trois manips se déroulent avec votre méthode actuelle, papier compris. C'est précisément ce qu'on veut mesurer.</li>
+      <li><strong>Trois manips, sur les protocoles du pilote</strong> : PROENT015, PROENT016 ou PROENT020. Idéalement une par protocole, sinon trois passages du même.</li>
+      <li><strong>Une seule personne chronomètre</strong>, de préférence sans être l'opérateur, pour ne pas ralentir la manip.</li>
+      <li><strong>Comptez à la minute près</strong>, pas à la seconde. Un ordre de grandeur fiable vaut mieux qu'une précision fausse.</li>
+      <li><strong>Renvoyez la fiche</strong> photographiée ou scannée à kilianmaire@biotraxion.com, en copie gibrilbenhamouda@biotraxion.com.</li>
+    </ol>
+  </div>
+
+  <div class="warnbox">
+    <h3>Les trois mesures, définies sans ambiguïté</h3>
+    <p><strong>Préparation</strong> : du moment où l'opérateur prend son protocole en main jusqu'au premier geste sous hotte. Sortir le matériel et les réactifs en fait partie.</p>
+    <p><strong>Reprise de données</strong> : après la manip, le temps passé à recopier les résultats vers le cahier, le tableur ou le fichier de suivi. Si c'est fait plus tard dans la journée, notez le temps réel, pas le temps ressenti.</p>
+    <p><strong>Sorties de hotte</strong> : chaque fois que l'opérateur interrompt le travail sous hotte pour consulter un document, noter quelque chose, ou demander une information. Un simple bâton par occurrence.</p>
+  </div>
+
+  <div class="manip">
+    <div class="bar"><span>Manip 1</span><span class="hint">Une ligne par mesure, à la minute</span></div>
+    <div class="grid">
+      <div class="cell"><span class="lab">Date</span><div class="fill"></div></div>
+      <div class="cell"><span class="lab">Opérateur</span><div class="fill"></div></div>
+      <div class="cell"><span class="lab">Protocole</span><span class="desc">PROENT015, 016 ou 020</span><div class="fill"></div></div>
+    </div>
+    <div class="grid">
+      <div class="cell"><span class="lab">Préparation</span><span class="desc">Protocole en main jusqu'au premier geste sous hotte</span><div class="fill"><span class="unit">min</span></div></div>
+      <div class="cell"><span class="lab">Reprise de données</span><span class="desc">Recopie des résultats après la manip</span><div class="fill"><span class="unit">min</span></div></div>
+      <div class="cell"><span class="lab">Sorties de hotte</span><span class="desc">Nombre d'interruptions</span><div class="fill"><span class="unit">fois</span></div></div>
+    </div>
+    <div class="grid">
+      <div class="cell" style="border-right:none;"><span class="lab">Remarque libre</span><span class="desc">Un incident, une attente, tout ce qui rend la mesure atypique</span><div class="fill"></div></div>
+    </div>
+  </div>
+
+  <div class="manip">
+    <div class="bar"><span>Manip 2</span><span class="hint">Une ligne par mesure, à la minute</span></div>
+    <div class="grid">
+      <div class="cell"><span class="lab">Date</span><div class="fill"></div></div>
+      <div class="cell"><span class="lab">Opérateur</span><div class="fill"></div></div>
+      <div class="cell"><span class="lab">Protocole</span><span class="desc">PROENT015, 016 ou 020</span><div class="fill"></div></div>
+    </div>
+    <div class="grid">
+      <div class="cell"><span class="lab">Préparation</span><span class="desc">Protocole en main jusqu'au premier geste sous hotte</span><div class="fill"><span class="unit">min</span></div></div>
+      <div class="cell"><span class="lab">Reprise de données</span><span class="desc">Recopie des résultats après la manip</span><div class="fill"><span class="unit">min</span></div></div>
+      <div class="cell"><span class="lab">Sorties de hotte</span><span class="desc">Nombre d'interruptions</span><div class="fill"><span class="unit">fois</span></div></div>
+    </div>
+    <div class="grid">
+      <div class="cell" style="border-right:none;"><span class="lab">Remarque libre</span><span class="desc">Un incident, une attente, tout ce qui rend la mesure atypique</span><div class="fill"></div></div>
+    </div>
+  </div>
+
+  <div class="manip">
+    <div class="bar"><span>Manip 3</span><span class="hint">Une ligne par mesure, à la minute</span></div>
+    <div class="grid">
+      <div class="cell"><span class="lab">Date</span><div class="fill"></div></div>
+      <div class="cell"><span class="lab">Opérateur</span><div class="fill"></div></div>
+      <div class="cell"><span class="lab">Protocole</span><span class="desc">PROENT015, 016 ou 020</span><div class="fill"></div></div>
+    </div>
+    <div class="grid">
+      <div class="cell"><span class="lab">Préparation</span><span class="desc">Protocole en main jusqu'au premier geste sous hotte</span><div class="fill"><span class="unit">min</span></div></div>
+      <div class="cell"><span class="lab">Reprise de données</span><span class="desc">Recopie des résultats après la manip</span><div class="fill"><span class="unit">min</span></div></div>
+      <div class="cell"><span class="lab">Sorties de hotte</span><span class="desc">Nombre d'interruptions</span><div class="fill"><span class="unit">fois</span></div></div>
+    </div>
+    <div class="grid">
+      <div class="cell" style="border-right:none;"><span class="lab">Remarque libre</span><span class="desc">Un incident, une attente, tout ce qui rend la mesure atypique</span><div class="fill"></div></div>
+    </div>
+  </div>
+
+  <div class="single">
+    <h2>Une dernière estimation, sans chronomètre</h2>
+    <p style="font-size:0.93rem;color:var(--ink-soft);">Celle-ci ne se mesure pas sur une manip. Répondez de mémoire, un ordre de grandeur suffit : combien de temps faut-il aujourd'hui pour rassembler la traçabilité complète d'une étude sur un mois donné, si un client ou un auditeur la demande ?</p>
+    <div class="fill"><span class="unit">heures</span></div>
+    <p style="font-size:0.9rem;color:var(--ink-faint);">Nous chronométrerons la même demande en semaine 8, sur le pack d'audit généré par l'application.</p>
+  </div>
+
+  <div class="foot">
+    <div class="sig">
+      <strong>Fiche remplie par</strong>
+      <span>Nom, fonction, date</span>
+      <div class="fill" style="width:260px;"></div>
+    </div>
+    <span class="stamp">Biotraxion, pilote Enterosys, 1er octobre au 30 novembre 2026</span>
+  </div>
+</div>
+
+</body></html>
